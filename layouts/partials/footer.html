@@ -1,7 +1,14 @@
 <div class="footer wrapper">
-	<nav class="nav">
-		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
-	</nav>
+	<div class="copyright">
+		{{ if .Site.Params.copyright }}
+			{{ if .Site.Params.copyrightUrl }}
+			<a href="{{ .Site.Params.copyrightUrl }}">{{ replace .Site.Params.copyright "{year}" now.Year }}</a>
+			{{ end }}
+		{{ end }}
+	</div>
+	<div class="credits">
+		<a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+	</div>
 </div>
 
 {{ template "_internal/google_analytics_async.html" . }}

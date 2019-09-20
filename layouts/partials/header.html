@@ -27,4 +27,8 @@
 	<script src="{{ .Site.BaseURL }}js/feather.min.js"></script>
 	{{- end -}}
 	<script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+	<!-- Icon -->
+	<link rel="shortcut icon" {{ if .Site.Params.faviconfile }} href="{{ .Site.Params.faviconfile | relURL }}"
+		{{ else }} href="{{ .Site.BaseURL }}img/favicon.ico" {{ end }}>
 </head>
