@@ -296,7 +296,7 @@ ul {
 }
 
 .post .draft-label {
-    color: #a00;
+    color: mediumseagreen;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -311,10 +311,10 @@ ul {
 
 .post-tags .tags a {
     display: inline-block;
-    border: 1px solid #a00;
+    border: 1px solid mediumseagreen;
     border-radius: 4px;
     padding: 0px 6px;
-    color: #a00;
+    color: mediumseagreen;
     line-height: 20px;
     font-size: 12px;
     text-decoration: none;
